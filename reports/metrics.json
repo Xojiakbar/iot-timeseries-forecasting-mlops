@@ -1,0 +1,8 @@
+{
+  "rmse": 1.7908693552017212,
+  "mae": 1.3147332668304443,
+  "n_test_windows": 2596,
+  "horizon": 24,
+  "target": "OT",
+  "dataset": "ett_small"
+}
