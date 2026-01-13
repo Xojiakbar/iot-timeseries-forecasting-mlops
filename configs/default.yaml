@@ -1,0 +1,51 @@
+data:
+
+  # If download fails, a synthetic dataset will be generated automatically.
+
+  dataset_name: "ett_small"
+
+  csv_path: "data/ett_small.csv"
+
+  target_col: "OT"         # ETT dataset has "OT". Synthetic fallback also provides "OT".
+
+  feature_cols: []         # [] means "use all numeric columns except target"
+
+  seq_len: 96              # lookback window
+
+  horizon: 24              # predict next 24 steps
+
+  train_ratio: 0.7
+
+  val_ratio: 0.15
+
+  standardize: true
+
+  seed: 42
+
+
+
+train:
+
+  epochs: 10
+
+  batch_size: 64
+
+  lr: 0.001
+
+  hidden_size: 64
+
+  num_layers: 2
+
+  dropout: 0.1
+
+  device: "auto"           # auto / cpu / cuda
+
+  save_path: "models/model.pt"
+
+
+
+eval:
+
+  metrics_path: "reports/metrics.json"
+
+
