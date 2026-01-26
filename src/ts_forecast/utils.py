@@ -12,7 +12,7 @@ from dataclasses import dataclass
 
 from pathlib import Path
 
-from typing import Any, Dict
+from typing import Any, dict
 
 
 
@@ -48,7 +48,7 @@ def ensure_dir(path: str | Path) -> None:
 
 
 
-def read_yaml(path: str | Path) -> Dict[str, Any]:
+def read_yaml(path: str | Path) -> dict[str, Any]:
 
     with open(path, "r", encoding="utf-8") as f:
 
@@ -58,7 +58,7 @@ def read_yaml(path: str | Path) -> Dict[str, Any]:
 
 
 
-def write_json(path: str | Path, obj: Dict[str, Any]) -> None:
+def write_json(path: str | Path, obj: dict[str, Any]) -> None:
 
     ensure_dir(path)
 
