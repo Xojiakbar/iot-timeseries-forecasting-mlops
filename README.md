@@ -1,4 +1,4 @@
-# IoT Time-Series Forecasting (MLOps-ready)
+# IoT Time-Series Forecasting
 
 
 
